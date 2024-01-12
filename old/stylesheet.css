@@ -1,0 +1,254 @@
+/* Reset default browser styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+/* Set default font size and color */
+body {
+	font-size: 16px;
+	color: #333;
+}
+
+/* Set header styles */
+header {
+	background-color: #000;
+	color: #fff;
+	padding: 20px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+}
+
+nav li {
+	margin-right: 20px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: #ff7f00;
+}
+
+/* Set hero section styles */
+.hero {
+	background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-cubes_23-2149140166.jpg?w=1380&t=st=1682330199~exp=1682330799~hmac=d4d38a1639267d3dad809285f6401bc14fc07389d0e4735d49221778e78af92d');
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.hero h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.hero p {
+	font-size: 24px;
+	margin-bottom: 40px;
+	color: #fff;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 30px;
+	background-color: #ff7f00;
+	color: #fff;
+	font-size: 16px;
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #fff;
+	color: #ff7f00;
+}
+
+/* Set services section styles */
+.services {
+	padding: 80px 0;
+	background-color: #fff;
+	text-align: center;
+}
+
+.services h2 {
+	font-size: 48px;
+	margin-bottom: 40px;
+	color: #000;
+}
+
+.services ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.services li {
+	width: 300px;
+	margin: 20px;
+	padding: 40px;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	transition: all 0.3s ease;
+}
+
+.services li:hover {
+	background-color: #ff7f00;
+	box-shadow: 0 0 10px rgba(255,127,0,0.5);
+}
+
+.services i {
+	font-size: 48px;
+	margin-bottom: 20px;
+	color: #ff7f00;
+}
+
+.services h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+.services p {
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+/* Set portfolio section styles */
+.portfolio {
+	padding: 80px 0;
+	background-color: #fff;
+	text-align: center;
+}
+
+.portfolio h2 {
+	font-size: 48px;
+	margin-bottom: 40px;
+	color: #000;
+}
+
+.portfolio ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio li {
+	margin: 20px;
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+
+.portfolio img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.portfolio .description {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(255,255,255,0.8);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+.portfolio li:hover .description {
+	opacity: 1;
+}
+
+.portfolio .description h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+.portfolio .description p {
+	font-size: 16px;
+	margin-bottom: 20px;
+	color: #000;
+}
+
+/* Set contact section styles */
+.contact {
+	padding: 80px 0;
+	background-color: #000;
+	text-align: center;
+}
+
+.contact h2 {
+	font-size: 48px;
+	margin-bottom: 40px;
+	color: #fff;
+}
+
+.contact-form {
+	max-width: 500px;
+	margin: 0 auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	color: #000;
+}
+
+.contact-form button {
+	background-color: #ff7f00;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+	background-color: #000;
+	color: #ff7f00;
+}
