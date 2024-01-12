@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-/* Apply Montserrat to headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 	font-weight: lighter;
@@ -22,7 +21,7 @@ body::before {
   z-index: -1;
   scroll-behavior: smooth;
 }
-/* Apply Open Sans to body text */
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-image: url("https://cdn.wallpapersafari.com/12/49/e1HDgu.jpg");
@@ -55,7 +54,7 @@ section {
   border-top: 1px solid white;
   margin-right: 20px;
   margin-left: 20px;
-  padding-top: 50px; /* add some padding to create space between sections */
+  padding-top: 50px;
 }
 
 nav {
@@ -78,10 +77,10 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  display: inline-block; /* This allows the width of the element to be set */
-  border-bottom: 1px solid white; /* Set the thickness and color of the line */
-  padding-bottom: 4px; /* Add extra spacing below the line */
-  margin-bottom: 8px; /* Add extra spacing above the line */
+  display: inline-block;
+  border-bottom: 1px solid white;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
   width: 100%;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
