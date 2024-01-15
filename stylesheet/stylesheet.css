@@ -4,9 +4,17 @@
   padding: 0;
 }
 
+html {
+  scrollbar-width: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 	font-weight: lighter;
+}
+body::-webkit-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
 }
 
 body::before {
@@ -18,11 +26,16 @@ body::before {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.07); /* semi-transparent white overlay */
   margin-bottom: 100px; /* add some margin at the bottom to make sure the content is not covered by the footer */
+  backdrop-filter: blur(10px);
   z-index: -1;
   scroll-behavior: smooth;
 }
 
 body {
+  border: 2px solid white;
+  padding: 0px;
+  margin-top: 0;
+  margin: 20px;
   font-family: 'Open Sans', sans-serif;
   background-image: url("https://cdn.wallpapersafari.com/12/49/e1HDgu.jpg");
   background-size: cover;
@@ -47,7 +60,7 @@ header {
   height: 100vh;
   margin-bottom: 30px;
   padding-bottom: 80px;
-  margin-top: -30px;
+  margin-top: -60px;
 }
 
 section {
@@ -63,7 +76,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 30px;
+  margin: 0px;
 }
 
 nav ul {
