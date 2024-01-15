@@ -26,7 +26,7 @@ body::before {
   height: 100%;
   background-color: rgba(255, 255, 255, 0.07); /* semi-transparent white overlay */
   margin-bottom: 100px; /* add some margin at the bottom to make sure the content is not covered by the footer */
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(0px);
   z-index: -1;
   scroll-behavior: smooth;
 }
@@ -152,6 +152,7 @@ nav ul li a:hover {
   margin: 0 auto;
   border-radius: 5px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0,1);
+  backdrop-filter: blur(5px);
 }
 
 @media (max-width: 768px) {
@@ -179,6 +180,7 @@ nav ul li a:hover {
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 10px;
+  backdrop-filter: blur(2px);
 }
 
 .image-grid-item {
