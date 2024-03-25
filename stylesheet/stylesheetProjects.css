@@ -164,6 +164,15 @@ nav ul li a {
     border: none;
 }
 
+.png-size {
+    width: 60%;
+    margin-left: 70px;
+    height: 200px;
+    transform: scale(1);
+    display: block;
+    border: none;
+}
+
 .video-description {
     padding: 10px;
     margin-top: 10px;
