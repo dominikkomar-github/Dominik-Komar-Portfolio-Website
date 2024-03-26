@@ -79,7 +79,6 @@ nav ul li a {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 20px;
-    margin-right: 40px;
 }
 
 .cta2 h2 {
@@ -221,7 +220,7 @@ nav ul li a {
     font-weight: 100;
     font-size: 25px;
     padding: 10px 20px;
-    margin-right: 20px;
+    margin-left: 30px;
     margin-top: 100px; /* Adjust this value to position the button below the header */
     border-bottom: 1px solid #fff;
     box-shadow:0 10px 15px rgba(0,0,0,1);
@@ -233,3 +232,125 @@ nav ul li a {
     color: #e31b6d;
     border-radius: 20px;
 }
+
+/* Laptops and Desktops (Large Screens) */
+@media (min-width: 992px) and (max-width: 1440px) {
+    /* Styles for large screens here */
+    
+    body {
+      margin: 50px auto; /* Increase margin for larger screens */
+    }
+    
+    header {
+      padding-bottom: 100px; /* Increase padding for larger screens */
+    }
+    
+    .video-container-wrapper {
+      flex-wrap: wrap; /* Allow videos to wrap on multiple lines */
+      justify-content: space-evenly; /* Distribute videos evenly */
+    }
+    
+    .video-container {
+      flex: 0 0 calc(33.33% - 20px); /* Adjust to fit 3 videos per row */
+      max-width: calc(33.33% - 20px); /* Adjust to fit 3 videos per row */
+    }
+
+        /* Increase font size and padding for .cta2 on ;aptops */
+    .cta2 {
+      font-size: 2rem; /* Adjust font size for laptops */
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+    
+    .cta2 h2 {
+        padding-top: 20px;
+      font-size: 3.5rem; /* Adjust heading size for laptops */
+    }
+    
+    .cta2 p {
+      font-size: 2rem; /* Adjust paragraph size for laptops */
+      opacity: 0.8;
+    }
+  }
+  
+  /* Tablets (Medium Screens) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    /* Styles for medium screens here */
+    
+    body {
+      margin: 30px auto; /* Adjust margin for tablets */
+    }
+    
+    header {
+      padding-bottom: 80px; /* Adjust padding for tablets */
+    }
+    
+    .video-container-wrapper {
+      flex-wrap: wrap; /* Allow videos to wrap on multiple lines */
+      justify-content: space-evenly; /* Distribute videos evenly */
+    }
+    
+    .video-container {
+      flex: 0 0 calc(50% - 20px); /* Adjust to fit 2 videos per row */
+      max-width: calc(50% - 20px); /* Adjust to fit 2 videos per row */
+    }
+
+    .cta2 {
+      font-size: 2rem; /* Adjust font size for mobile */
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+    
+    .cta2 h2 {
+      font-size: 2rem; /* Adjust heading size for mobile */
+    }
+    
+    .cta2 p {
+      font-size: 1.5rem; /* Adjust paragraph size for mobile */
+      opacity: 0.8;
+    }
+}
+  
+  /* Mobile Phones (Small Screens) */
+  @media (max-width: 767px) {
+    /* Styles for small screens here */
+    
+    body {
+        margin: 5px;
+    }
+    
+    header {
+      padding-bottom: 50px; /* Adjust padding for mobile */
+    }
+    
+    .video-container-wrapper {
+      flex-wrap: wrap; /* Allow videos to wrap on multiple lines */
+      justify-content: space-evenly; /* Distribute videos evenly */
+    }
+    
+    .video-container {
+      flex: 0 0 100%; /* Make each video take full width on mobile */
+      max-width: 100%; /* Make each video take full width on mobile */
+    }
+    
+    .scroll-to-top {
+      display: none; /* Adjust scroll-to-top position for mobile */
+    }
+    
+    /* Increase font size and padding for .cta2 on mobile */
+    .cta2 {
+      font-size: 2rem; /* Adjust font size for mobile */
+      padding-top: 30px;
+      padding-bottom: 20px;
+    }
+    
+    .cta2 h2 {
+      font-size: 1.75rem; /* Adjust heading size for mobile */
+    }
+    
+    .cta2 p {
+      font-size: 1rem; /* Adjust paragraph size for mobile */
+      opacity: 0.8;
+    }
+  }
+  

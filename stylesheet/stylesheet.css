@@ -43,12 +43,6 @@ background-position:center;
 background-attachment:fixed
 }
 
-@media (max-width: 768px) {
-body {
-background-size:contain
-}
-}
-
 header {
 text-shadow:-5px 0 5px #000;
 position:relative;
@@ -108,22 +102,6 @@ color:#e31b6d;
 border-radius:20px
 }
 
-@media only screen and (max-width: 768px) {
-nav ul li {
-margin:0 30px
-}
-
-nav ul li a {
-font-size:20px;
-padding:5px
-}
-
-nav {
-justify-content:space-between;
-margin:15px
-}
-}
-
 .about-me {
 padding:50px 0;
 margin-bottom:-15px;
@@ -152,18 +130,6 @@ margin:0 auto;
 border-radius:5px;
 box-shadow:0 10px 15px rgba(0,0,0,1);
 backdrop-filter:blur(5px)
-}
-
-@media (max-width: 768px) {
-.about-me {
-padding:50px 0
-}
-
-.about-me-box {
-margin-right:0;
-margin-bottom:50px;
-width:100%
-}
 }
 
 .image-grid-container {
@@ -360,19 +326,6 @@ color:#e31b6d;
 transition:all .3s ease-in-out
 }
 
-@media (max-width: 768px) {
-.contact .left-section {
-width:100%;
-margin-right:0
-}
-
-.contact .left-section p {
-font-size:1rem;
-line-height:1.2;
-margin-bottom:30px
-}
-}
-
 .portfolio {
 padding:50px 0
 }
@@ -492,23 +445,6 @@ padding-bottom:20px
 margin-top:100px;
 }
 
-@media only screen and (min-width: 768px) {
-.video {
-flex-basis:calc(33.33% - 20px);
-margin-bottom:0
-}
-
-.video:last-child {
-margin-bottom:-200px
-}
-
-.video-details {
-flex:0 1 calc(33.33% - 20px);
-margin:0 10px 20px;
-padding:0
-}
-}
-
 #lastvid {
 padding-top:200px;
 padding-bottom:50px
@@ -526,3 +462,78 @@ color:#e31b6d;
 border-radius:20px
 }
 
+@media (min-width: 992px) and (max-width: 1440px) {
+    .about-me-box {
+        width: 80%; /* Remove width limitation */
+        padding: 20px; /* Reduce top/bottom padding for better content visibility */
+        margin: 10px auto; /* Add or adjust margins for spacing on mobile */
+      }
+
+    .image-grid-container {
+        width: 70%; /* Remove width limitation */
+        padding: 20px; /* Reduce top/bottom padding for better content visibility */
+        margin-bottom: 10px auto; /* Add or adjust margins for spacing on mobile */
+    }
+
+    .image-grid-container i {
+        font-size: 20px; /* Adjust the font-size for icon size reduction */
+      }
+
+    header {
+        height: fit-content; /* Adjust height based on content */
+        padding-top: 150px; /* Add top padding for content */
+        padding-bottom: 330px; /* Add bottom padding for content */
+    }
+
+    .social-media {
+        margin-bottom:-100px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    /* Add your tablet specific adjustments here */
+    /* You can adjust font sizes, margins, paddings, or layout elements for optimal tablet viewing */
+  
+    /* Example: Adjust navigation spacing for smaller screens */
+    nav ul li {
+      margin: 0 50px; /* Increase spacing between navigation items on tablets */
+    }
+  
+    /* Example: Adjust about-me section for tablets (optional) */
+    .about-me p {
+      line-height: 1.2; /* Adjust line height for better readability */
+      margin-left: 0px;
+      margin-right: -10px;
+    }
+
+    .about-me-box {
+        width: 80%; /* Remove width limitation */
+        padding: 20px; /* Reduce top/bottom padding for better content visibility */
+        margin: 10px auto; /* Add or adjust margins for spacing on mobile */
+      }
+    
+    .image-grid-container {
+        width: 80%; /* Remove width limitation */
+        margin-bottom: 10px; /* Add or adjust margins for spacing on mobile */
+    }
+
+    header {
+        height: fit-content; /* Adjust height based on content */
+        padding-top: 150px; /* Add top padding for content */
+        padding-bottom: 50px; /* Add bottom padding for content */
+    }
+
+    .cta h1,
+    .cta h2,
+    .cta h3 {
+        font-size: calc(3em - 0.5rem); /* Reduce font size by 0.25rem */
+    }
+    
+}  
+
+@media (max-width: 767px) {
+    body {
+        border: none;
+    }
+}
