@@ -488,6 +488,10 @@ border-radius:20px
     .social-media {
         margin-bottom:-100px;
     }
+
+    nav ul li {
+        margin: 0 20px; /* Increase spacing between navigation items on tablets */
+      }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -497,7 +501,7 @@ border-radius:20px
   
     /* Example: Adjust navigation spacing for smaller screens */
     nav ul li {
-      margin: 0 50px; /* Increase spacing between navigation items on tablets */
+      margin: 0 20px; /* Increase spacing between navigation items on tablets */
     }
   
     /* Example: Adjust about-me section for tablets (optional) */
