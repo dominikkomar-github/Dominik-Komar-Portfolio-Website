@@ -309,6 +309,10 @@ nav ul li a {
       font-size: 1.5rem; /* Adjust paragraph size for mobile */
       opacity: 0.8;
     }
+
+    .scroll-to-top {
+      display: none; /* Adjust scroll-to-top position for mobile */
+    }
 }
   
   /* Mobile Phones (Small Screens) */
@@ -317,6 +321,8 @@ nav ul li a {
     
     body {
         margin: 5px;
+        border: none;
+        background-size: auto;
     }
     
     header {
