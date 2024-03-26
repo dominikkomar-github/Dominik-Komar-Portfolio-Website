@@ -1,6 +1,7 @@
 # Portfolio-Website
- Main website
+Main website
 This is just my portfolio website, that I'm updating when I have something to add.
+Link: https://domfolio.netlify.app/
 
 It's created with HTML, CSS and a bit of JavaScript.
 
