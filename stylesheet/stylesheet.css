@@ -500,15 +500,10 @@ border-radius:20px
 
 @media (min-width: 768px) and (max-width: 992px) {
 
-    /* Add your tablet specific adjustments here */
-    /* You can adjust font sizes, margins, paddings, or layout elements for optimal tablet viewing */
-  
-    /* Example: Adjust navigation spacing for smaller screens */
     nav ul li {
       margin: 0 20px; /* Increase spacing between navigation items on tablets */
     }
   
-    /* Example: Adjust about-me section for tablets (optional) */
     .about-me p {
       line-height: 1.2; /* Adjust line height for better readability */
       margin-left: 0px;
@@ -535,7 +530,11 @@ border-radius:20px
     .cta h1,
     .cta h2,
     .cta h3 {
-        font-size: calc(3em - 0.5rem); /* Reduce font size by 0.25rem */
+        font-size: calc(3em - 0.5rem); /* Reduce font size by 0.5rem */
+    }
+
+    .scroll-to-top {
+      display: none;
     }
     
 }  
@@ -543,6 +542,10 @@ border-radius:20px
 @media (max-width: 767px) {
     body {
         border: none;
-        background-size: auto;
+        background-size: cover;
+    }
+
+    .scroll-to-top {
+      display: none;
     }
 }

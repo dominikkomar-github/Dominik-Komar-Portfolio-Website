@@ -238,7 +238,9 @@ nav ul li a {
     /* Styles for large screens here */
     
     body {
-      margin: 50px auto; /* Increase margin for larger screens */
+      margin: 20px auto; /* Increase margin for larger screens */
+      margin-left: 20px;
+      margin-right: 20px;
     }
     
     header {
@@ -275,10 +277,11 @@ nav ul li a {
   
   /* Tablets (Medium Screens) */
   @media (min-width: 768px) and (max-width: 991px) {
-    /* Styles for medium screens here */
     
     body {
-      margin: 30px auto; /* Adjust margin for tablets */
+      margin: 20px auto; /* Adjust margin for tablets */
+      margin-left: 20px;
+      margin-right: 20px;
     }
     
     header {
@@ -311,18 +314,17 @@ nav ul li a {
     }
 
     .scroll-to-top {
-      display: none; /* Adjust scroll-to-top position for mobile */
+      display: none;
     }
 }
   
   /* Mobile Phones (Small Screens) */
   @media (max-width: 767px) {
-    /* Styles for small screens here */
     
     body {
         margin: 5px;
         border: none;
-        background-size: auto;
+        background-size: cover;
     }
     
     header {
@@ -340,7 +342,7 @@ nav ul li a {
     }
     
     .scroll-to-top {
-      display: none; /* Adjust scroll-to-top position for mobile */
+      display: none;
     }
     
     /* Increase font size and padding for .cta2 on mobile */
